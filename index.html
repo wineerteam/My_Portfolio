@@ -1,199 +1,557 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Sunil Kumar Yadav - Competitive Programmer | MERN Stack Developer | Open Source Enthusiast. Solving Problems. Building Systems. Competing Globally.">
-  <title>Sunil Kumar Yadav | Competitive Programmer & Mern-Stack Developer</title>
-  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>SK</text></svg>">
+  <meta name="description"
+    content="Sunil Kumar Yadav — Competitive Programmer & MERN Stack Developer. Solving Problems. Building Systems. Competing Globally.">
+  <meta name="keywords"
+    content="Sunil Kumar Yadav, portfolio, competitive programmer, MERN stack, developer, DSA, LeetCode, ICPC">
+  <meta property="og:title" content="Sunil Kumar Yadav | Competitive Programmer & MERN Developer">
+  <meta property="og:description"
+    content="Portfolio of Sunil Kumar Yadav — solving complex problems and building real-world systems.">
+  <title>Sunil Kumar Yadav | Competitive Programmer &amp; MERN Developer</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml"
+    href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><defs><linearGradient id='g' x1='0' y1='0' x2='1' y2='1'><stop offset='0' stop-color='%236c63ff'/><stop offset='1' stop-color='%23a855f7'/></linearGradient></defs><text y='.9em' font-size='80' fill='url(%23g)' font-family='sans-serif' font-weight='900'>S</text></svg>">
+
+  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&display=swap"
+    rel="stylesheet">
+
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-  <nav class="navbar">
-    <a href="#hero" class="nav-brand">SKY</a>
-    <button class="nav-toggle" aria-label="Toggle menu">
-      <span></span><span></span><span></span>
-    </button>
-    <ul class="nav-links">
-      <li><a href="#hero">Home</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#resume">Resume</a></li>
-      <li><a href="#cp">Competitive</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#experience">Experience</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
 
-  <main>
-    <section id="hero" class="hero">
-      <div class="hero-content">
-        <h1>Sunil Kumar Yadav</h1>
-        <p class="hero-typing"><span class="typing-text"></span><span class="cursor">|</span></p>
-        <p class="hero-tagline">"Solving Problems. Building Systems. Competing Globally."</p>
-        <a href="#contact" class="btn-cta">Get in Touch</a>
-        <div class="hero-links">
-          <a href="https://github.com/wineerteam" target="_blank" rel="noopener noreferrer" aria-label="GitHub">GitHub</a>
-          <a href="https://www.linkedin.com/in/sunil-kumar-sky123/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">LinkedIn</a>
+  <!-- Custom Cursor -->
+  <div class="cursor-dot" id="cursorDot"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+
+  <!-- Ambient blobs & Auras -->
+  <div class="aura-1"></div>
+  <div class="aura-2"></div>
+  <div class="bg-blob bg-blob-1"></div>
+  <div class="bg-blob bg-blob-2"></div>
+  <div class="bg-blob bg-blob-3"></div>
+
+  <!-- Particle canvas -->
+  <canvas id="particles-canvas"></canvas>
+
+  <div class="page-wrap">
+
+    <!-- =============== NAVBAR =============== -->
+    <nav class="navbar" id="navbar">
+      <a href="#hero" class="nav-brand">SKY</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#hero" id="nav-home">Home</a></li>
+        <li><a href="#about" id="nav-about">About</a></li>
+        <li><a href="#resume" id="nav-resume">Resume</a></li>
+        <li><a href="#cp" id="nav-cp">Competitive</a></li>
+        <li><a href="#projects" id="nav-projects">Projects</a></li>
+        <li><a href="#skills" id="nav-skills">Skills</a></li>
+        <li><a href="#experience" id="nav-exp">Experience</a></li>
+        <li><a href="#contact" id="nav-contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <main>
+
+      <!-- =============== HERO =============== -->
+      <section id="hero" class="hero">
+        <!-- Floating code snippets in background -->
+        <div class="hero-code-bg" aria-hidden="true">
+          <pre class="code-float code-float-1">import javascript from 'react';
+export { React };
+import 'MongoDB';
+
+const MERN = (fullStack) => {
+  autoOptimize();
+  return something;
+}</pre>
+          <pre class="code-float code-float-2">mongoose.export.query({
+  react: ['Node.js', 'Express', 'MongoDB'],
+  mongoDB: source['mongoose']
+});</pre>
+          <pre class="code-float code-float-3">const solve = (problem) => {
+  return dp.optimize(n, states);
+}
+// builds algorithms at scale</pre>
         </div>
-      </div>
-      <div class="hero-image-wrap">
-        <img src="profile.jpg" alt="Sunil Kumar Yadav - Profile" class="hero-image" onerror="this.src='https://placehold.co/400x500/1e1b4b/818cf8?text=SK'">
-      </div>
-    </section>
 
-    <section id="about" class="section about">
-      <div class="container">
-        <h2 class="section-title">About Me</h2>
-        <div class="about-grid">
-          <div class="about-text">
-            <p>I'm a <strong>competitive programmer</strong> and <strong>mern-stack developer</strong> driven by algorithms, data structures, and clean system design. I thrive on turning complex problems into elegant solutions—whether on a judge or in production code.</p>
-            <p>My focus is <strong>DSA & competitive programming</strong>, with a strong foundation in Java, and Python. I build real-world projects to apply the same problem-solving mindset, and I'm actively preparing for <strong>ICPC</strong> and contributing toward <strong>GSoC 2026</strong>.</p>
-          </div>
-          <div class="about-image-wrap">
-            <img src="images/coding.jpg" alt="Coding workspace" class="about-image" onerror="this.src='https://placehold.co/600x400/1e1b4b/6366f1?text=Coding'">
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="resume" class="section resume">
-      <div class="container">
-        <h2 class="section-title">Resume</h2>
-        <div class="resume-grid">
-          <div class="resume-text">
-            <p>A concise view of my experience, skills, and achievements as a competitive programmer and mern-stack developer.</p>
-            <p>You can view or download my latest resume using the links below.</p>
-            <div class="resume-actions">
-              <!-- updates resume link -->
-            <a href="https://resume-sunil-kumar-yadav.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn-cta">View Resume</a>
-            <a href="https://resume-sunil-kumar-yadav.vercel.app/" target="_blank" class="btn-outline">Open Resume</a>   </div>
-          <div class="resume-preview">
-         <div> 
-           <!--  -->
-<iframe 
-  src="https://resume-sunil-kumar-yadav.vercel.app/?embed=true" 
-  title="Sunil Kumar Yadav Resume" 
-  loading="lazy">
-</iframe>
-          <!--  -->
-          </div>
-      </div>
-    </section>
-
-    <section id="cp" class="section cp-section">
-      <div class="container">
-        <h2 class="section-title">Competitive Programming</h2>
-        <div class="cp-grid">
-          <div class="cp-stats">
-            <div class="cp-stat"><span class="cp-num">500+</span> LeetCode Problems</div>
-            <div class="cp-stat"><span class="cp-num">AIR 475</span> National Rank</div>
-            <div class="cp-stat"><span class="cp-num">Top 3</span> @ Codolio</div>
-            <p class="cp-prep">Preparing for <strong>DSA & System Design</strong> & <strong>GSoC 2026</strong></p>
-          </div>
-          <div class="cp-image-wrap">
-            <img src="images/cp.jpg" alt="Competitive Programming" class="cp-image" onerror="this.src='https://placehold.co/600x400/312e81/818cf8?text=CP'">
+        <div class="hero-content" data-reveal="left">
+          <h1>SUNIL KUMAR<br>YADAV</h1>
+          <p class="hero-subtitle-gradient">Competitive<br>Programmer &amp;<br>Full-Stack Developer</p>
+          <p class="hero-tagline">I'm a B.Tech student at Galgotias University. I love solving tough algorithmic
+            problems and building full-stack apps that actually work at scale.</p>
+          <p class="hero-stats-line">500+ LeetCode Solved &nbsp;|&nbsp; Pupil @ Codeforces</p>
+          <div class="hero-actions">
+            <a href="#projects" class="btn-hero-cyan" id="hero-projects-btn">View Projects</a>
+            <a href="#contact" class="btn-hero-outline" id="hero-cta">Get in Touch</a>
           </div>
         </div>
-      </div>
-    </section>
 
-    <section id="projects" class="section projects">
-      <div class="container">
-        <h2 class="section-title">Projects</h2>
-        <div class="projects-grid">
-          <article class="project-card">
-            <div class="project-image-wrap">
-              <img src="images/project1.jpg" alt="FilmHub" onerror="this.src='https://placehold.co/600x320/1e1b4b/8b5cf6?text=FilmHub'">
+        <!-- Right side: Bento card grid -->
+        <div class="hero-bento" data-reveal="right">
+          <!-- CP Stats Card (top-left) -->
+          <div class="bento-card bento-cp">
+            <div class="bento-icon bento-icon-cp">
+              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none"
+                stroke="#22d3ee" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="16 18 22 12 16 6"></polyline>
+                <polyline points="8 6 2 12 8 18"></polyline>
+              </svg>
             </div>
-            <div class="project-body">
-              <h3>FilmHub</h3>
-              <p>Movie discovery and info app built with modern web stack.</p>
-              <a href="https://filmyhub.vercel.app/" target="_blank" rel="noopener noreferrer" class="project-link">View Project →</a>
-            </div>
-          </article>
-          <article class="project-card">
-            <div class="project-image-wrap">
-              <img src="images/project2.jpg" alt="Digital Health Tracker" onerror="this.src='https://placehold.co/600x320/1e1b4b/6366f1?text=Health+Tracker'">
-            </div>
-            <div class="project-body">
-              <h3>Digital Health Tracker</h3>
-              <p>Track health metrics and habits with a clean, responsive UI.</p>
-              <a href="https://fantastic-moxie-97319a.netlify.app/" target="_blank" rel="noopener noreferrer" class="project-link">View Project →</a>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
+            <h4 class="bento-card-title">COMPETITIVE<br>PROGRAMMING</h4>
+            <p class="bento-card-detail">Codeforces: <b>CodeHunter_SKY</b></p>
+            <p class="bento-card-detail">Rating: 1260 (Pupil)</p>
+            <p class="bento-card-detail">LeetCode: 500+ Solved</p>
+            <p class="bento-card-sub">Algorithmic Prowess</p>
+          </div>
 
-    <section id="skills" class="section skills">
-      <div class="container">
-        <h2 class="section-title">Skills</h2>
-        <div class="skills-grid">
-          <div class="skill-card">C</div>
-          <!-- <div class="skill-card">C++</div> -->
-          <div class="skill-card">Java</div>
-          <div class="skill-card">Python</div>
-          <div class="skill-card">DSA</div>
-          <div class="skill-card">SQL</div>
-          <div class="skill-card">HTML</div>
-          <div class="skill-card">CSS</div>
-          <div class="skill-card">JavaScript</div>
-        </div>
-      </div>
-    </section>
-
-    <section id="experience" class="section experience">
-      <div class="container">
-        <h2 class="section-title">Experience</h2>
-        <div class="timeline">
-          <div class="timeline-item">
-            <div class="timeline-marker"></div>
-            <div class="timeline-content">
-              <h3>Infosys Springboard Internship</h3>
-              <p class="timeline-role">Intern</p>
-              <p>Hands-on experience with enterprise tools and practices as part of Infosys Springboard.</p>
+          <!-- Profile Photo Card (top-right, larger) -->
+          <div class="bento-card bento-profile">
+            <img src="profile.jpg" alt="Sunil Kumar Yadav" class="bento-avatar"
+              onerror="this.src='https://placehold.co/300x380/0d0d20/6c63ff?text=SKY'">
+            <div class="bento-name-overlay">
+              <strong>SUNIL KUMAR<br>YADAV</strong>
             </div>
           </div>
+
+          <!-- MERN Stack Card (bottom-left) -->
+          <div class="bento-card bento-mern">
+            <div class="bento-icon-row">
+              <span class="bento-tech-icon">⚛️</span>
+              <span class="bento-tech-icon">🔧</span>
+            </div>
+            <h4 class="bento-card-title">MERN STACK</h4>
+            <p class="bento-card-detail">React, Node.js, Express,<br>MongoDB</p>
+            <p class="bento-card-sub">Full-Stack Architect | Next.js</p>
+          </div>
+
+          <!-- Contributions Card (bottom-right) -->
+          <div class="bento-card bento-contrib">
+            <div class="bento-icon-row">
+              <span class="bento-tech-icon">💎</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="#a78bfa">
+                <path
+                  d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+              </svg>
+            </div>
+            <h4 class="bento-card-title">CONTRIBUTIONS</h4>
+            <p class="bento-card-detail">Open Source</p>
+            <!-- GitHub-like activity grid -->
+            <div class="activity-grid" id="activityGrid"></div>
+            <p class="bento-card-sub-right">Activity</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- =============== EXPERTISE ARCHITECTURE =============== -->
+      <section id="expertise" class="section expertise-design">
+        <div class="container">
+          <div class="section-label">Engineering Philosophy</div>
+          <h2 class="section-title" data-reveal="up">System Architecture</h2>
+          <div class="expertise-grid">
+            <div class="expertise-item" data-reveal="left">
+              <div class="expertise-circle">01</div>
+              <h3>Scalable Backend</h3>
+              <p>Designing robust microservices and modular monoliths focusing on high availability and low-latency API
+                response times.</p>
+              <div class="expertise-tags">
+                <span>Node.js</span><span>Express</span><span>Security</span>
+              </div>
+            </div>
+            <div class="expertise-item" data-reveal="up">
+              <div class="expertise-circle">02</div>
+              <h3>Algorithm Optimization</h3>
+              <p>Applying advanced Data Structures and Competitive Programming techniques to optimize
+                performance-critical business logic.</p>
+              <div class="expertise-tags">
+                <span>Complexity Analysis</span><span>Memory Mgmt</span>
+              </div>
+            </div>
+            <div class="expertise-item" data-reveal="right">
+              <div class="expertise-circle">03</div>
+              <h3>Fluid User Experience</h3>
+              <p>Creating immersive, responsive, and high-performance front-end systems with modern frameworks and state
+                management.</p>
+              <div class="expertise-tags">
+                <span>React</span><span>Next.js</span><span>Motion Design</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- =============== ABOUT =============== -->
+      <section id="about" class="section about">
+        <div class="container">
+          <div class="section-label">Who I Am</div>
+          <h2 class="section-title" data-reveal="up">About Me</h2>
+          <div class="section-divider"></div>
+          <div class="about-grid">
+            <div class="about-text" data-reveal="left">
+              <p>Hello! I'm <strong>Sunil</strong>, and I'm currently studying B.Tech at <strong>Galgotias
+                  University</strong>. My world revolves around solving puzzles — whether that's a tricky problem on
+                LeetCode or debugging a complex MERN stack edge case. I believe that being a great developer is 50%
+                about knowing the tools and 50% about having the right mindset.</p>
+              <p>I focus heavily on <strong>DSA and Competitive Programming</strong> because I love the thrill of
+                writing efficient code that performs even at scale. I'm actively aiming for <strong>ICPC</strong> and
+                contributing to open source as I prepare for <strong>GSoC 2026</strong>. For me, every piece of code is
+                an opportunity to learn something new.</p>
+              <div class="about-chips">
+                <span class="chip">🎯 B.Tech Student</span>
+                <span class="chip">🚀 MERN Developer</span>
+                <span class="chip">📊 DSA Addict</span>
+                <span class="chip">🌍 Open Source</span>
+                <span class="chip">🏆 Codeforces Pupil</span>
+              </div>
+            </div>
+            <div class="about-image-wrap" data-reveal="right">
+              <img src="images/coding.jpg" alt="Coding workspace" class="about-image"
+                onerror="this.src='https://placehold.co/600x420/0d0d20/6c63ff?text=Coding'">
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- =============== RESUME =============== -->
+      <section id="resume" class="section resume">
+        <div class="container">
+          <div class="section-label">My Background</div>
+          <h2 class="section-title" data-reveal="up">Resume</h2>
+          <div class="section-divider"></div>
+          <div class="resume-grid">
+            <div class="resume-text" data-reveal="left">
+              <p>A concise view of my experience, skills, and achievements as a competitive programmer and MERN stack
+                developer. Built with care to highlight what matters to engineering teams.</p>
+              <p>View or download my latest resume directly below.</p>
+              <div class="resume-actions">
+                <a href="https://resume-sunil-kumar-yadav.vercel.app/" target="_blank" rel="noopener noreferrer"
+                  class="btn-cta" id="resume-view-btn">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                    <circle cx="12" cy="12" r="3"></circle>
+                  </svg>
+                  View Resume
+                </a>
+                <a href="https://resume-sunil-kumar-yadav.vercel.app/" target="_blank" class="btn-outline"
+                  id="resume-open-btn">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                    <polyline points="15 3 21 3 21 9"></polyline>
+                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                  </svg>
+                  Open in New Tab
+                </a>
+              </div>
+            </div>
+            <div class="resume-preview" data-reveal="right">
+              <iframe src="https://resume-sunil-kumar-yadav.vercel.app/?embed=true" title="Sunil Kumar Yadav Resume"
+                loading="lazy"></iframe>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- =============== COMPETITIVE PROGRAMMING =============== -->
+      <section id="cp" class="section cp-section">
+        <div class="container">
+          <div class="section-label">Algorithmic Excellence</div>
+          <h2 class="section-title" data-reveal="up">Competitive Programming</h2>
+          <div class="section-divider"></div>
+          <div class="cp-grid">
+            <div class="cp-stats" data-reveal="left">
+              <div class="cp-stat-card">
+                <div class="cp-icon">⚡</div>
+                <div class="cp-stat-body">
+                  <div class="cp-num">500+</div>
+                  <div class="cp-label">LeetCode Problems Solved</div>
+                </div>
+              </div>
+              <div class="cp-stat-card">
+                <div class="cp-icon">🏆</div>
+                <div class="cp-stat-body">
+                  <div class="cp-num">AIR 475</div>
+                  <div class="cp-label">National Rank in Competitive Programming</div>
+                </div>
+              </div>
+              <div class="cp-stat-card">
+                <div class="cp-icon">🥇</div>
+                <div class="cp-stat-body">
+                  <div class="cp-num">Top 3</div>
+                  <div class="cp-label">Ranked at Codolio Platform</div>
+                </div>
+              </div>
+              <div class="cp-prep">
+                Currently preparing for <strong>DSA &amp; System Design</strong> interviews and working toward
+                <strong>GSoC 2026</strong> contributions.
+              </div>
+            </div>
+            <div class="cp-image-wrap" data-reveal="right">
+              <img src="images/cp.jpg" alt="Competitive Programming" class="cp-image"
+                onerror="this.src='https://placehold.co/600x420/0d0d20/a78bfa?text=Competitive+Coding'">
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- =============== PROJECTS =============== -->
+      <section id="projects" class="section projects">
+        <div class="container">
+          <div class="section-label">What I Build</div>
+          <h2 class="section-title" data-reveal="up">Projects</h2>
+          <p class="section-subtitle" data-reveal="up">Real-world applications built with modern technologies and a
+            problem-solving mindset.</p>
+          <div class="projects-grid">
+
+            <article class="project-card" data-reveal="up">
+              <div class="project-image-wrap">
+                <img src="images/project1.jpg" alt="FilmHub"
+                  onerror="this.src='https://placehold.co/600x320/0d0d20/8b5cf6?text=FilmHub'">
+                <div class="project-image-overlay"></div>
+              </div>
+              <div class="project-body">
+                <h3>🎬 FilmHub</h3>
+                <p>Movie discovery platform with real-time search, filtering, and beautiful movie detail pages powered
+                  by the TMDB API.</p>
+                <div class="project-tags">
+                  <span class="tag">React</span>
+                  <span class="tag">TMDB API</span>
+                  <span class="tag">Tailwind CSS</span>
+                  <span class="tag">Vercel</span>
+                </div>
+                <a href="https://filmyhub.vercel.app/" target="_blank" rel="noopener noreferrer" class="project-link"
+                  id="project-filmhub">
+                  Live Demo
+                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                    <polyline points="12 5 19 12 12 19"></polyline>
+                  </svg>
+                </a>
+              </div>
+            </article>
+
+            <article class="project-card" data-reveal="up">
+              <div class="project-image-wrap">
+                <img src="images/project2.jpg" alt="Digital Health Tracker"
+                  onerror="this.src='https://placehold.co/600x320/0d0d20/22d3ee?text=Health+Tracker'">
+                <div class="project-image-overlay"></div>
+              </div>
+              <div class="project-body">
+                <h3>💊 Digital Health Tracker</h3>
+                <p>Track health metrics and daily habits with an interactive, responsive dashboard and intuitive
+                  visualizations.</p>
+                <div class="project-tags">
+                  <span class="tag">HTML/CSS/JS</span>
+                  <span class="tag">Chart.js</span>
+                  <span class="tag">LocalStorage</span>
+                  <span class="tag">Netlify</span>
+                </div>
+                <a href="https://fantastic-moxie-97319a.netlify.app/" target="_blank" rel="noopener noreferrer"
+                  class="project-link" id="project-health">
+                  Live Demo
+                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                    <polyline points="12 5 19 12 12 19"></polyline>
+                  </svg>
+                </a>
+              </div>
+            </article>
+
+            <article class="project-card" data-reveal="up">
+              <div class="project-image-wrap">
+                <img src="images/project3.jpg" alt="NestQuest PG Finder"
+                  onerror="this.src='https://placehold.co/600x320/0d0d20/f472b6?text=NestQuest'">
+                <div class="project-image-overlay"></div>
+              </div>
+              <div class="project-body">
+                <h3>🏠 NestQuest — PG Finder</h3>
+                <p>Full-stack MERN platform for PG and hostel listings with Google OAuth, Razorpay payments, and
+                  real-time Socket.io chat.</p>
+                <div class="project-tags">
+                  <span class="tag">MERN Stack</span>
+                  <span class="tag">Socket.io</span>
+                  <span class="tag">Razorpay</span>
+                  <span class="tag">Google OAuth</span>
+                </div>
+                <a href="https://github.com/wineerteam" target="_blank" rel="noopener noreferrer" class="project-link"
+                  id="project-nestquest">
+                  View on GitHub
+                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                    <polyline points="12 5 19 12 12 19"></polyline>
+                  </svg>
+                </a>
+              </div>
+            </article>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- =============== SKILLS =============== -->
+      <section id="skills" class="section skills">
+        <div class="container">
+          <div class="section-label">My Toolkit</div>
+          <h2 class="section-title" data-reveal="up">Skills</h2>
+          <p class="section-subtitle" data-reveal="up">Technologies and tools I use to build fast, scalable, and
+            reliable software.</p>
+          <div class="skills-grid" data-reveal="zoom">
+            <div class="skill-card"><span class="skill-icon">🔷</span>C</div>
+            <div class="skill-card"><span class="skill-icon">☕</span>Java</div>
+            <div class="skill-card"><span class="skill-icon">🐍</span>Python</div>
+            <div class="skill-card"><span class="skill-icon">📊</span>DSA</div>
+            <div class="skill-card"><span class="skill-icon">🗄️</span>SQL</div>
+            <div class="skill-card"><span class="skill-icon">🌐</span>HTML5</div>
+            <div class="skill-card"><span class="skill-icon">🎨</span>CSS3</div>
+            <div class="skill-card"><span class="skill-icon">⚡</span>JavaScript</div>
+            <div class="skill-card"><span class="skill-icon">⚛️</span>React</div>
+            <div class="skill-card"><span class="skill-icon">🖥️</span>Node.js</div>
+            <div class="skill-card"><span class="skill-icon">🍃</span>MongoDB</div>
+            <div class="skill-card"><span class="skill-icon">🐙</span>Git</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- =============== EXPERIENCE =============== -->
+      <section id="experience" class="section experience">
+        <div class="container">
+          <div class="section-label">My Journey</div>
+          <h2 class="section-title" data-reveal="up">Experience</h2>
+          <div class="section-divider"></div>
+          <div class="timeline" data-reveal="up">
+            <div class="timeline-item">
+              <div class="timeline-marker"></div>
+              <div class="timeline-content">
+                <div class="timeline-header">
+                  <h3>Infosys Springboard Internship</h3>
+                  <span class="timeline-date">2025</span>
+                </div>
+                <p class="timeline-role">Intern — Infosys Springboard</p>
+                <p>Gained hands-on experience with enterprise tools, software development best practices, and
+                  large-scale system architecture as part of the prestigious Infosys Springboard program.</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-marker"></div>
+              <div class="timeline-content">
+                <div class="timeline-header">
+                  <h3>Open Source Contributor</h3>
+                  <span class="timeline-date">Ongoing</span>
+                </div>
+                <p class="timeline-role">Contributor — GSoC 2026 Candidate</p>
+                <p>Actively contributing to open-source projects and preparing to participate in Google Summer of Code
+                  2026 with a strong foundation in algorithms and full-stack development.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- =============== CONTACT =============== -->
+      <section id="contact" class="section contact">
+        <div class="container">
+          <div class="section-label">Let's Connect</div>
+          <h2 class="section-title" data-reveal="up">Get in Touch</h2>
+          <p class="section-subtitle" data-reveal="up">Have a project in mind or just want to say hi? I'd love to hear
+            from you.</p>
+
+          <div class="contact-wrapper">
+            <div class="contact-info" data-reveal="left">
+              <h3>Let's build something awesome together 🚀</h3>
+              <p>I'm currently open to new opportunities, collaborations, and interesting conversations. Whether it's a
+                project, an internship, or a quick hello — reach out!</p>
+              <div class="contact-methods">
+                <a href="mailto:sunilkumar62001197@gmail.com" class="contact-method cm-email" id="contact-email">
+                  <div class="contact-method-icon">📧</div>
+                  <div class="contact-method-text">
+                    <small>Email</small>
+                    sunilkumar62001197@gmail.com
+                  </div>
+                </a>
+                <a href="tel:6200119772" class="contact-method cm-phone" id="contact-phone">
+                  <div class="contact-method-icon">📱</div>
+                  <div class="contact-method-text">
+                    <small>Phone</small>
+                    +91 6200119772
+                  </div>
+                </a>
+                <a href="https://www.linkedin.com/in/sunil-kumar-sky123/" target="_blank" rel="noopener noreferrer"
+                  class="contact-method cm-linkedin" id="contact-linkedin">
+                  <div class="contact-method-icon">💼</div>
+                  <div class="contact-method-text">
+                    <small>LinkedIn</small>
+                    sunil-kumar-sky123
+                  </div>
+                </a>
+                <a href="https://github.com/wineerteam" target="_blank" rel="noopener noreferrer"
+                  class="contact-method cm-github" id="contact-github">
+                  <div class="contact-method-icon">🐙</div>
+                  <div class="contact-method-text">
+                    <small>GitHub</small>
+                    wineerteam
+                  </div>
+                </a>
+              </div>
+            </div>
+
+            <form class="contact-form" id="contact-form" data-reveal="right">
+              <div class="form-group">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" name="from_name" placeholder="Enter your name" required>
+              </div>
+              <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="reply_to" placeholder="email@example.com" required>
+              </div>
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" placeholder="Your message here..." required></textarea>
+              </div>
+              <button type="submit" class="btn-submit" id="form-submit">
+                <span id="btn-text">Send Message 🚀</span>
+              </button>
+              <div id="form-status" style="margin-top: 1rem; font-size: 0.9rem; font-weight: 600;"></div>
+            </form>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <!-- =============== FOOTER =============== -->
+    <footer class="footer">
+      <div class="footer-inner">
+        <span class="footer-brand">SKY</span>
+        <p>© <span id="year"></span> Sunil Kumar Yadav. Handcrafted with ❤️ by me.</p>
+        <div class="footer-links">
+          <a href="https://github.com/wineerteam" target="_blank" rel="noopener noreferrer">GitHub</a>
+          <a href="https://www.linkedin.com/in/sunil-kumar-sky123/" target="_blank"
+            rel="noopener noreferrer">LinkedIn</a>
+          <a href="mailto:sunilkumar62001197@gmail.com">Email</a>
         </div>
       </div>
-    </section>
+    </footer>
 
-    <section id="contact" class="section contact">
-      <div class="container">
-        <h2 class="section-title">Contact</h2>
-        <div class="contact-links-row">
-          <a href="mailto:sunilkumar62001197@gmail.com" class="contact-link">Email</a>
-          <a href="tel:6200119772" class="contact-link">Phone</a>
-          <a href="https://www.linkedin.com/in/sunil-kumar-sky123/" target="_blank" rel="noopener noreferrer" class="contact-link">LinkedIn</a>
-          <a href="https://github.com/wineerteam" target="_blank" rel="noopener noreferrer" class="contact-link">GitHub</a>
-        </div>
-        <form class="contact-form" action="https://formsubmit.co/sunilkumar62001197@gmail.com" method="POST" id="contact-form">
-          <input type="hidden" name="_subject" value="Portfolio Contact - Sunil Kumar Yadav">
-          <input type="hidden" name="_template" value="table">
-          <input type="hidden" name="_next" value="" id="form-next">
-          <input type="hidden" name="_captcha" value="true">
-          <input type="text" name="_honey" style="position:absolute;left:-9999px" tabindex="-1" autocomplete="off">
-          <label for="name">Name</label>
-          <input type="text" id="name" name="name" required>
-          <label for="email">Email</label>
-          <input type="email" id="email" name="email" required>
-          <label for="message">Message</label>
-          <textarea id="message" name="message" rows="5" required></textarea>
-          <button type="submit" class="btn-submit">Send Message</button>
-        </form>
-      </div>
-    </section>
-  </main>
+  </div><!-- /page-wrap -->
 
-  <footer class="footer">
-    <p>© <span id="year"></span> Sunil Kumar Yadav. All rights reserved.</p>
-  </footer>
-
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
   <script src="script.js"></script>
 </body>
+
 </html>
