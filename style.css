@@ -1,3 +1,4 @@
+
 /* ============================================================
    DESIGN TOKENS
    ============================================================ */
@@ -1545,4 +1546,1070 @@ body::after {
     gap: 8px;
   }
   .bento-card { padding: 0.8rem; }
+}
+
+/* =========================================================
+   REFERENCE THEME — DARK SLATE + WHITE + CYAN
+   Visual direction inspired by the reference image.
+   HTML / IDs / classes / JavaScript are NOT changed.
+   ========================================================= */
+
+/* Main page background */
+html,
+body {
+  background:
+    radial-gradient(circle at 75% 25%, rgba(0, 229, 255, 0.08), transparent 28%),
+    radial-gradient(circle at 20% 75%, rgba(0, 140, 255, 0.07), transparent 30%),
+    #202d34 !important;
+  color: #f4f8fa !important;
+}
+
+/* Main sections — clean slate background */
+.section,
+.hero {
+  background:
+    radial-gradient(circle at 80% 20%, rgba(0, 229, 255, 0.06), transparent 25%),
+    linear-gradient(135deg, #202d34 0%, #26353c 48%, #1d292f 100%) !important;
+}
+
+/* Subtle background depth without making the page noisy */
+.hero::before,
+.hero::after {
+  opacity: 0.28 !important;
+}
+
+/* Navbar */
+.navbar,
+nav {
+  background: rgba(25, 35, 41, 0.92) !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08) !important;
+}
+
+.nav-link,
+.navbar a,
+nav a {
+  color: #dce7eb !important;
+}
+
+.nav-link:hover,
+.navbar a:hover,
+nav a:hover,
+.nav-link.active {
+  color: #19e6ff !important;
+}
+
+/* Main hero name */
+.hero-title,
+.hero h1 {
+  color: #f5f8fa !important;
+  text-shadow: 0 2px 18px rgba(0, 0, 0, 0.22) !important;
+}
+
+/* Hero highlighted text */
+.hero-title .gradient-text,
+.hero h1 .gradient-text,
+.gradient-text {
+  background: linear-gradient(90deg, #18dff5, #58b8ff, #9a72ff) !important;
+  -webkit-background-clip: text !important;
+  background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+}
+
+/* Hero paragraph / secondary text */
+.hero p,
+.hero-description,
+.hero-subtitle,
+.section-subtitle {
+  color: #d6e1e5 !important;
+}
+
+/* Stats */
+.hero-stats-line {
+  color: #f2f7f9 !important;
+}
+
+.hero-stats-line strong,
+.hero-stats-line b {
+  color: #20e5ff !important;
+}
+
+/* Bento cards */
+.bento-card,
+.stat-card,
+.achievement-card,
+.cert-card {
+  background: rgba(24, 36, 43, 0.78) !important;
+  border-color: rgba(255, 255, 255, 0.10) !important;
+  box-shadow: 0 18px 45px rgba(0, 0, 0, 0.20) !important;
+}
+
+.bento-card h3,
+.bento-card h4,
+.bento-card-title,
+.stat-card h3,
+.achievement-card h3,
+.cert-card h3 {
+  color: #f4f8fa !important;
+}
+
+.bento-card p,
+.bento-card-detail,
+.bento-card-sub,
+.stat-card p,
+.achievement-card p,
+.cert-card p {
+  color: #cbd8dd !important;
+}
+
+.bento-card-detail b,
+.bento-card strong {
+  color: #25e3fa !important;
+}
+
+/* Section headings */
+.section-title,
+.section h2 {
+  color: #f5f8fa !important;
+}
+
+.section-label {
+  color: #20def5 !important;
+}
+
+/* Normal body text */
+.about p,
+.expertise-item p,
+.skill-card,
+.project-card p,
+.experience-card p,
+.contact-info p {
+  color: #d2dee2 !important;
+}
+
+/* Links and icons */
+a {
+  color: #25ddf5;
+}
+
+a:hover {
+  color: #ff6fb5;
+}
+
+/* Buttons — cyan like the reference */
+.btn-hero-cyan,
+.btn-primary,
+button[type="submit"] {
+  background: linear-gradient(135deg, #10d8ef, #18bfe9) !important;
+  color: #082027 !important;
+  border: none !important;
+  box-shadow: 0 10px 28px rgba(0, 220, 255, 0.18) !important;
+}
+
+.btn-hero-cyan:hover,
+.btn-primary:hover,
+button[type="submit"]:hover {
+  background: linear-gradient(135deg, #35e8fa, #26cfff) !important;
+  color: #06181d !important;
+}
+
+/* Outline button */
+.btn-hero-outline {
+  color: #eaf7fa !important;
+  border-color: #20dff7 !important;
+  background: rgba(20, 40, 46, 0.35) !important;
+}
+
+.btn-hero-outline:hover {
+  color: #0b2026 !important;
+  background: #20dff7 !important;
+}
+
+/* Skill cards */
+.skill-card {
+  background: rgba(27, 40, 47, 0.82) !important;
+  border-color: rgba(255, 255, 255, 0.09) !important;
+  color: #eef6f8 !important;
+}
+
+.skill-card:hover {
+  border-color: rgba(32, 224, 247, 0.55) !important;
+}
+
+/* Project cards — KEEP PROJECT IMAGES NATURAL */
+.project-card {
+  background: rgba(25, 37, 43, 0.88) !important;
+  border-color: rgba(255, 255, 255, 0.09) !important;
+}
+
+.project-card img,
+.project-card-image img,
+.project-card .project-image img {
+  filter: none !important;
+  opacity: 1 !important;
+  mix-blend-mode: normal !important;
+}
+
+/* Do not put a strong color wash over project screenshots */
+.project-card::before,
+.project-card::after,
+.project-image::before,
+.project-image::after {
+  background: transparent !important;
+  opacity: 0 !important;
+}
+
+/* Project text */
+.project-card h3,
+.project-card h4 {
+  color: #f4f8fa !important;
+}
+
+.project-card .project-description,
+.project-card p {
+  color: #cdd9dd !important;
+}
+
+/* Tags */
+.tag,
+.project-tag,
+.skill-tag {
+  background: rgba(0, 210, 235, 0.10) !important;
+  color: #35e5f7 !important;
+  border-color: rgba(0, 220, 245, 0.24) !important;
+}
+
+/* Contact */
+.contact-info,
+.contact-form {
+  background: rgba(24, 36, 42, 0.78) !important;
+  border-color: rgba(255, 255, 255, 0.09) !important;
+}
+
+.contact-methods a {
+  color: #dbe7ea !important;
+}
+
+.contact-methods a:hover {
+  color: #20e1f8 !important;
+}
+
+.contact-form input,
+.contact-form textarea {
+  background: rgba(14, 24, 29, 0.72) !important;
+  color: #f3f8fa !important;
+  border-color: rgba(255, 255, 255, 0.12) !important;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  color: #91a5ad !important;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #20dff7 !important;
+  box-shadow: 0 0 0 3px rgba(32, 223, 247, 0.10) !important;
+}
+
+/* Footer */
+footer {
+  background: #172126 !important;
+  color: #b9c8cd !important;
+}
+
+footer a {
+  color: #22def5 !important;
+}
+
+/* Keep decorative code/text effects subtle */
+.code-float {
+  opacity: 0.20 !important;
+  color: #6b8792 !important;
+}
+
+/* Mobile readability */
+@media (max-width: 768px) {
+  html,
+  body,
+  .section,
+  .hero {
+    background: #202d34 !important;
+  }
+
+  .hero p,
+  .section-subtitle {
+    color: #d5e0e4 !important;
+  }
+}
+
+
+/* =========================================================
+   FINAL REFERENCE-MATCH SKILLS
+   CSS ONLY — existing HTML classes are preserved.
+   No IDs, HTML structure, or JavaScript dependencies changed.
+   ========================================================= */
+
+.skills {
+  background: #1e242c !important;
+}
+
+.skills .container {
+  max-width: 1120px !important;
+}
+
+.skills .section-title {
+  color: #f4f7f9 !important;
+  font-size: clamp(2rem, 3vw, 2.8rem) !important;
+  font-weight: 700 !important;
+  letter-spacing: -0.02em !important;
+  text-align: center !important;
+}
+
+.skills .section-title::first-letter {
+  color: #f4f7f9;
+}
+
+.skills .section-subtitle {
+  color: #aebbc1 !important;
+  text-align: center !important;
+}
+
+/* Two clean columns like the reference */
+.skills-grid {
+  display: grid !important;
+  grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  column-gap: 72px !important;
+  row-gap: 18px !important;
+  max-width: 930px !important;
+  margin: 42px auto 0 !important;
+}
+
+/* Each skill becomes: circle | name + progress bar */
+.skill-card {
+  position: relative !important;
+  display: block !important;
+  min-height: 72px !important;
+  padding: 7px 56px 8px 78px !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+  background: transparent !important;
+  box-shadow: none !important;
+  color: #eef4f6 !important;
+  font-size: 14px !important;
+  font-weight: 600 !important;
+  line-height: 1.35 !important;
+  overflow: visible !important;
+  transform-style: preserve-3d;
+}
+
+/* Circular icon area */
+.skill-card .skill-icon {
+  position: absolute !important;
+  left: 0 !important;
+  top: 0 !important;
+  width: 52px !important;
+  height: 52px !important;
+  min-width: 52px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  border-radius: 50% !important;
+  border: 3px solid #f5f8fa !important;
+  background: #182128 !important;
+  color: #ffffff !important;
+  font-size: 23px !important;
+  line-height: 1 !important;
+  box-sizing: border-box !important;
+  box-shadow: 0 0 0 1px rgba(255,255,255,.08),
+              0 6px 16px rgba(0,0,0,.18) !important;
+}
+
+/* Skill name */
+.skill-card {
+  padding-top: 4px !important;
+}
+
+.skill-card::after {
+  content: "" !important;
+  position: absolute !important;
+  left: 78px !important;
+  right: 0 !important;
+  top: 38px !important;
+  height: 10px !important;
+  border-radius: 999px !important;
+  background:
+    linear-gradient(90deg, #00eeff 0 var(--skill-level, 75%),
+    #303943 var(--skill-level, 75%) 100%) !important;
+  box-shadow: inset 0 1px 2px rgba(0,0,0,.18) !important;
+}
+
+/* Percentage */
+.skill-card::before {
+  content: var(--skill-percent, "75%") !important;
+  position: absolute !important;
+  right: 0 !important;
+  top: 29px !important;
+  transform: translateY(-50%) !important;
+  z-index: 2 !important;
+  color: #dfe8eb !important;
+  font-size: 10px !important;
+  font-weight: 500 !important;
+  line-height: 1 !important;
+}
+
+/* Individual levels — visual presentation only */
+.skills-grid .skill-card:nth-child(1)  { --skill-level: 90%; --skill-percent: "90%"; }
+.skills-grid .skill-card:nth-child(2)  { --skill-level: 90%; --skill-percent: "90%"; }
+.skills-grid .skill-card:nth-child(3)  { --skill-level: 90%; --skill-percent: "90%"; }
+.skills-grid .skill-card:nth-child(4)  { --skill-level: 85%; --skill-percent: "85%"; }
+.skills-grid .skill-card:nth-child(5)  { --skill-level: 80%; --skill-percent: "80%"; }
+.skills-grid .skill-card:nth-child(6)  { --skill-level: 80%; --skill-percent: "80%"; }
+.skills-grid .skill-card:nth-child(7)  { --skill-level: 75%; --skill-percent: "75%"; }
+.skills-grid .skill-card:nth-child(8)  { --skill-level: 80%; --skill-percent: "80%"; }
+.skills-grid .skill-card:nth-child(9)  { --skill-level: 75%; --skill-percent: "75%"; }
+.skills-grid .skill-card:nth-child(10) { --skill-level: 70%; --skill-percent: "70%"; }
+.skills-grid .skill-card:nth-child(11) { --skill-level: 65%; --skill-percent: "65%"; }
+.skills-grid .skill-card:nth-child(12) { --skill-level: 65%; --skill-percent: "65%"; }
+.skills-grid .skill-card:nth-child(13) { --skill-level: 80%; --skill-percent: "80%"; }
+
+/* Gentle hover — no layout/JS effect */
+.skill-card:hover {
+  background: rgba(255,255,255,.018) !important;
+  border: 0 !important;
+  box-shadow: none !important;
+}
+
+.skill-card:hover .skill-icon {
+  border-color: #20e4f7 !important;
+  box-shadow: 0 0 0 1px rgba(32,228,247,.12),
+              0 0 18px rgba(32,228,247,.16) !important;
+}
+
+.skill-card:hover::after {
+  filter: brightness(1.08) !important;
+}
+
+/* Make the emoji/icon circles feel closer to the reference */
+.skill-card:nth-child(1) .skill-icon { background: #e34b2f !important; }
+.skill-card:nth-child(2) .skill-icon { background: #238bc0 !important; }
+.skill-card:nth-child(3) .skill-icon { background: #151d26 !important; }
+.skill-card:nth-child(4) .skill-icon { background: #161d29 !important; }
+.skill-card:nth-child(5) .skill-icon { background: #1b2630 !important; }
+.skill-card:nth-child(6) .skill-icon { background: #f3d800 !important; color: #101820 !important; }
+.skill-card:nth-child(7) .skill-icon { background: #111820 !important; }
+.skill-card:nth-child(8) .skill-icon { background: #111820 !important; }
+.skill-card:nth-child(9) .skill-icon { background: #0d171d !important; }
+.skill-card:nth-child(10) .skill-icon { background: #17231d !important; }
+.skill-card:nth-child(11) .skill-icon { background: #1b2027 !important; }
+.skill-card:nth-child(12) .skill-icon { background: #17231d !important; }
+.skill-card:nth-child(13) .skill-icon { background: #18232b !important; }
+
+/* Reference-like dark page background */
+body {
+  background: #1e242c !important;
+}
+
+@media (max-width: 900px) {
+  .skills-grid {
+    column-gap: 36px !important;
+  }
+}
+
+@media (max-width: 680px) {
+  .skills-grid {
+    grid-template-columns: 1fr !important;
+    max-width: 560px !important;
+    row-gap: 16px !important;
+    margin-top: 30px !important;
+  }
+
+  .skill-card {
+    min-height: 68px !important;
+  }
+}
+
+
+/* ============================================================
+   FINAL VISIBILITY POLISH
+   White + Pink + Red accents
+   IMPORTANT: HTML / IDs / classes / JavaScript are untouched.
+   Only visual CSS overrides are added below.
+   ============================================================ */
+
+/* ---------- GLOBAL TEXT SAFETY ---------- */
+body {
+  color: #f7f7f7 !important;
+  background-color: #171b20 !important;
+}
+
+/* Any previously dark/black text becomes readable */
+.hero h1,
+.hero h2,
+.hero h3,
+.hero h4,
+.hero h5,
+.hero h6,
+.section h1,
+.section h2,
+.section h3,
+.section h4,
+.section h5,
+.section h6,
+.about h1,
+.about h2,
+.about h3,
+.about h4,
+.about h5,
+.about h6,
+.skills h1,
+.skills h2,
+.skills h3,
+.skills h4,
+.skills h5,
+.skills h6,
+.project-card h1,
+.project-card h2,
+.project-card h3,
+.project-card h4,
+.project-card h5,
+.project-card h6,
+.experience-card h1,
+.experience-card h2,
+.experience-card h3,
+.experience-card h4,
+.experience-card h5,
+.experience-card h6,
+.contact h1,
+.contact h2,
+.contact h3,
+.contact h4,
+.contact h5,
+.contact h6 {
+  color: #ffffff !important;
+}
+
+/* ---------- HEADINGS ---------- */
+.section-title,
+.hero-title {
+  color: #ffffff !important;
+  text-shadow: 0 2px 12px rgba(0,0,0,.22) !important;
+}
+
+/* Highlight portions / gradient text */
+.gradient-text {
+  background: linear-gradient(
+    90deg,
+    #ff4f81 0%,
+    #ff6fa3 42%,
+    #ff4b55 100%
+  ) !important;
+  -webkit-background-clip: text !important;
+  background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+}
+
+/* ---------- NAVBAR ---------- */
+.navbar,
+nav {
+  background: rgba(15, 19, 24, 0.96) !important;
+  border-bottom: 1px solid rgba(255, 105, 145, 0.18) !important;
+}
+
+.navbar a,
+nav a,
+.nav-link {
+  color: #f1f1f1 !important;
+  text-shadow: none !important;
+}
+
+.navbar a:hover,
+nav a:hover,
+.nav-link:hover {
+  color: #ff6f9f !important;
+}
+
+.nav-link.active,
+.navbar .active,
+nav .active {
+  color: #ff4f78 !important;
+  text-shadow: 0 0 12px rgba(255, 79, 120, .25) !important;
+}
+
+/* ---------- HERO ---------- */
+.hero {
+  background:
+    radial-gradient(circle at 76% 28%, rgba(255, 70, 105, .07), transparent 24%),
+    radial-gradient(circle at 22% 72%, rgba(255, 110, 160, .045), transparent 28%),
+    #1d242b !important;
+}
+
+.hero::before,
+.hero::after {
+  opacity: .16 !important;
+}
+
+.hero-title,
+.hero h1 {
+  background: linear-gradient(90deg, #ffffff, #ff668f, #ff405f) !important;
+  -webkit-background-clip: text !important;
+  background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+}
+
+
+.hero p,
+.hero-description,
+.hero-subtitle {
+  color: #e3e3e3 !important;
+}
+
+.hero-stats-line {
+  color: #ffffff !important;
+}
+
+.hero-stats-line strong,
+.hero-stats-line b {
+  color: #ff668f !important;
+}
+
+/* ---------- SECTION LABELS ---------- */
+.section-label {
+  color: #ff5c86 !important;
+  font-weight: 700 !important;
+}
+
+/* ---------- NORMAL BODY TEXT ---------- */
+.section-subtitle,
+.about p,
+.expertise-item p,
+.experience-card p,
+.project-card p,
+.contact-info p {
+  color: #dcdcdc !important;
+}
+
+.about p {
+  color: #e6e6e6 !important;
+}
+
+.about p strong {
+  color: #ff668f !important;
+}
+
+/* ---------- CARDS ---------- */
+.bento-card,
+.stat-card,
+.achievement-card,
+.cert-card,
+.expertise-item,
+.experience-card,
+.contact-info,
+.contact-form {
+  background: rgba(22, 28, 34, 0.86) !important;
+  border-color: rgba(255, 255, 255, 0.12) !important;
+  box-shadow: 0 16px 38px rgba(0,0,0,.20) !important;
+}
+
+.bento-card:hover,
+.stat-card:hover,
+.achievement-card:hover,
+.cert-card:hover,
+.expertise-item:hover,
+.experience-card:hover {
+  border-color: rgba(255, 92, 134, .48) !important;
+}
+
+/* Card headings that previously became black */
+.bento-card h3,
+.bento-card h4,
+.bento-card-title,
+.stat-card h3,
+.achievement-card h3,
+.cert-card h3,
+.expertise-item h3,
+.experience-card h3 {
+  color: #ffffff !important;
+}
+
+/* Card details */
+.bento-card p,
+.bento-card-detail,
+.bento-card-sub,
+.stat-card p,
+.achievement-card p,
+.cert-card p,
+.expertise-item p,
+.experience-card p {
+  color: #d7d7d7 !important;
+}
+
+.bento-card-detail b,
+.bento-card strong,
+.stat-card strong {
+  color: #ff668e !important;
+}
+
+/* ---------- SKILLS: REFERENCE-LIKE VISIBILITY ---------- */
+.skills {
+  background: #1d242b !important;
+}
+
+.skills-grid {
+  color: #ffffff !important;
+}
+
+.skill-card {
+  background: rgba(28, 34, 40, .90) !important;
+  color: #ffffff !important;
+  border-color: rgba(255,255,255,.10) !important;
+  box-shadow: 0 12px 28px rgba(0,0,0,.16) !important;
+}
+
+.skill-card:hover {
+  border-color: rgba(255, 86, 125, .55) !important;
+  box-shadow: 0 14px 32px rgba(255, 66, 105, .10) !important;
+}
+
+.skill-icon {
+  color: #ffffff !important;
+}
+
+/* Skill names and percentage text */
+.skill-card span:not(.skill-icon),
+.skill-card .skill-name,
+.skill-card .skill-percent,
+.skill-card small {
+  color: #f5f5f5 !important;
+}
+
+/* Progress bars: keep readable against dark background */
+.skill-card .skill-bar,
+.skill-card .progress-bar,
+.skill-card .skill-progress,
+.skill-card .progress {
+  background: #3b424b !important;
+}
+
+.skill-card .skill-fill,
+.skill-card .progress-fill,
+.skill-card .progress-bar > span {
+  background: linear-gradient(90deg, #ff4777, #ff668f) !important;
+}
+
+/* ---------- PROJECTS ---------- */
+.projects {
+  background: #1c2329 !important;
+}
+
+/* Project image remains natural — NO COLOR WASH */
+.project-card img,
+.project-card-image img,
+.project-card .project-image img {
+  filter: none !important;
+  opacity: 1 !important;
+  mix-blend-mode: normal !important;
+}
+
+/* Keep overlay extremely weak / transparent */
+.project-card::before,
+.project-card::after,
+.project-image::before,
+.project-image::after {
+  opacity: 0 !important;
+  background: transparent !important;
+}
+
+.project-card {
+  background: rgba(23, 29, 35, .92) !important;
+  border-color: rgba(255,255,255,.11) !important;
+}
+
+.project-card h3,
+.project-card h4,
+.project-card .project-title {
+  color: #ffffff !important;
+}
+
+.project-card p,
+.project-card .project-description {
+  color: #d7d7d7 !important;
+}
+
+/* Project links / action text */
+.project-card a {
+  color: #ff668f !important;
+}
+
+.project-card a:hover {
+  color: #ff405f !important;
+}
+
+/* Tags */
+.tag,
+.project-tag,
+.skill-tag {
+  background: rgba(255, 74, 115, .10) !important;
+  color: #ff7599 !important;
+  border-color: rgba(255, 95, 135, .28) !important;
+}
+
+/* ---------- ABOUT / RESUME ---------- */
+.about,
+.resume,
+.competitive,
+.experience {
+  color: #eeeeee !important;
+}
+
+.about strong,
+.resume strong,
+.competitive strong,
+.experience strong {
+  color: #ff668f !important;
+}
+
+/* ---------- CONTACT ---------- */
+.contact {
+  background: #1d242b !important;
+}
+
+.contact-info,
+.contact-form {
+  color: #f2f2f2 !important;
+}
+
+.contact-methods a {
+  color: #e6e6e6 !important;
+}
+
+.contact-methods a:hover {
+  color: #ff668f !important;
+}
+
+.contact-form label {
+  color: #ffffff !important;
+}
+
+.contact-form input,
+.contact-form textarea {
+  background: #151a1f !important;
+  color: #ffffff !important;
+  border-color: rgba(255,255,255,.13) !important;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  color: #8f979e !important;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #ff5d86 !important;
+  box-shadow: 0 0 0 3px rgba(255, 93, 134, .10) !important;
+}
+
+/* ---------- BUTTONS ---------- */
+.btn-hero-cyan,
+.btn-primary,
+button[type="submit"] {
+  background: linear-gradient(135deg, #ff416f, #ff5f91) !important;
+  color: #ffffff !important;
+  border: none !important;
+  box-shadow: 0 10px 28px rgba(255, 65, 111, .18) !important;
+}
+
+.btn-hero-cyan:hover,
+.btn-primary:hover,
+button[type="submit"]:hover {
+  background: linear-gradient(135deg, #ff2f5f, #ff4f85) !important;
+  color: #ffffff !important;
+}
+
+.btn-hero-outline {
+  color: #ffffff !important;
+  border-color: #ff668f !important;
+  background: rgba(255, 70, 110, .035) !important;
+}
+
+.btn-hero-outline:hover {
+  color: #ffffff !important;
+  background: rgba(255, 70, 110, .14) !important;
+}
+
+/* ---------- LINKS / SMALL ACCENTS ---------- */
+a {
+  color: #ff668f;
+}
+
+a:hover {
+  color: #ff3f68;
+}
+
+/* Icons / accent elements */
+.icon,
+.social-icon,
+.contact-icon,
+.expertise-icon {
+  color: #ff668f !important;
+}
+
+/* ---------- CODE DECORATION ----------
+   Decorative code should never compete with real text. */
+.code-float {
+  color: #89939b !important;
+  opacity: .12 !important;
+}
+
+/* ---------- FOOTER ---------- */
+footer {
+  background: #14191e !important;
+  color: #c7c7c7 !important;
+  border-top: 1px solid rgba(255,255,255,.08) !important;
+}
+
+footer a {
+  color: #ff668f !important;
+}
+
+footer a:hover {
+  color: #ff405f !important;
+}
+
+/* ---------- SELECTION ---------- */
+::selection {
+  background: rgba(255, 78, 120, .28) !important;
+  color: #ffffff !important;
+}
+
+/* ---------- RED USED ONLY AS SMALL ACCENT ----------
+   Prevents the interface from becoming visually aggressive. */
+.badge,
+.status,
+.highlight,
+.accent {
+  color: #ff536e !important;
+}
+
+/* ---------- MOBILE ---------- */
+@media (max-width: 768px) {
+  .hero,
+  .skills,
+  .projects,
+  .contact,
+  .section {
+    background: #1d242b !important;
+  }
+
+  .hero p,
+  .section-subtitle,
+  .about p,
+  .project-card p {
+    color: #dddddd !important;
+  }
+
+  .navbar,
+  nav {
+    background: rgba(15,19,24,.98) !important;
+  }
+}
+
+/* =========================================================
+   GALAXY BACKGROUND — LEFT + RIGHT SIDES
+   Decorative only. HTML / IDs / JS remain unchanged.
+   ========================================================= */
+.solar-system {
+  position: fixed !important;
+  inset: 0 !important;
+  width: 100vw !important;
+  height: 100vh !important;
+  top: 0 !important;
+  left: 0 !important;
+  right: auto !important;
+  transform: none !important;
+  pointer-events: none !important;
+  z-index: 0 !important;
+  overflow: hidden !important;
+  opacity: .72;
+  perspective: 1400px;
+  transform-style: preserve-3d;
+}
+
+/* Sun stays on the left instead of the page center. */
+.solar-sun {
+  left: 9% !important;
+  top: 50% !important;
+  transform: translate(-50%, -50%) !important;
+}
+
+/* Left side: Mercury, Venus, Earth, Mars. */
+.orbit-mercury,
+.orbit-venus,
+.orbit-earth,
+.orbit-mars {
+  left: 10% !important;
+  top: 50% !important;
+}
+
+/* Right side: Jupiter, Saturn, Uranus, Neptune. */
+.orbit-jupiter,
+.orbit-saturn,
+.orbit-uranus,
+.orbit-neptune {
+  left: 90% !important;
+  top: 50% !important;
+}
+
+.planet-orbit {
+  overflow: visible;
+}
+
+.planet-core {
+  z-index: 5;
+  will-change: transform, filter;
+}
+
+/* Portfolio content remains above the decorative galaxy. */
+.page-wrap,
+.navbar,
+main,
+footer {
+  position: relative;
+  z-index: 2;
+}
+
+#particles-canvas {
+  z-index: 0;
+}
+
+@media (max-width: 768px) {
+  .solar-system {
+    opacity: .30;
+  }
+
+  .solar-sun {
+    left: 10% !important;
+  }
+
+  .orbit-mercury,
+  .orbit-venus,
+  .orbit-earth,
+  .orbit-mars {
+    left: 8% !important;
+  }
+
+  .orbit-jupiter,
+  .orbit-saturn,
+  .orbit-uranus,
+  .orbit-neptune {
+    left: 92% !important;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .solar-system,
+  .solar-sun,
+  .planet-orbit,
+  .planet-core {
+    animation: none !important;
+  }
 }
